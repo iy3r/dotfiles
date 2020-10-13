@@ -1,0 +1,18 @@
+{
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "right",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.openEditors.visible": 0,
+  "breadcrumbs.enabled": false,
+  "javascript.implicitProjectConfig.checkJs": false,
+  "git.enabled": false
+}
