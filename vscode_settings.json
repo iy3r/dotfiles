@@ -12,7 +12,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "explorer.openEditors.visible": 0,
+  "explorer.sortOrder": "type",
   "breadcrumbs.enabled": false,
   "javascript.implicitProjectConfig.checkJs": false,
-  "git.enabled": false
+  "git.enabled": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  }
 }
