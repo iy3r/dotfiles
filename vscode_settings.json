@@ -1,20 +1,22 @@
 {
-  "workbench.colorTheme": "Solarized Light",
-  "workbench.settings.editor": "json",
-  "workbench.sideBar.location": "right",
-  "editor.fontFamily": "Fira Code",
+  "css.lint.unknownAtRules": "ignore",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "python.formatting.provider": "black",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.tabSize": 4
+  },
+  "editor.fontFamily": "JetBrains Mono, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.tabSize": 2,
+  "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "editor.tabSize": 2,
   "explorer.openEditors.visible": 0,
-  "explorer.sortOrder": "type",
-  "breadcrumbs.enabled": false,
-  "javascript.implicitProjectConfig.checkJs": false,
   "git.enabled": false,
   "files.exclude": {
     "**/.git": true,
@@ -22,6 +24,30 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/node_modules": true
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.eslintcache": true,
+    "**/.cache": true,
+    "**/.ipynb_checkpoints": true,
+    "**/__pycache__": true
+  },
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.sideBar.location": "right",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.sortOrder": "type",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js, ${capture}.typegen.ts",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts, ${capture}.typegen.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "*.mts": "${capture}.typegen.ts",
+    "*.cts": "${capture}.typegen.ts"
   }
 }
